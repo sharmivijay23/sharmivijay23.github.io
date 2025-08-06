@@ -21,12 +21,21 @@ export default function featureUsageAnalysis() {
             <br />
             <div className="flex justify-center p-8">
               <Image
-                src="/Sales_comparison.png"
+                src="/Daily Commute Dashboard.jpg"
                 alt="Feature Usage and Growth Trends"
                 width="900"
                 height="900"
-                className="mb-2 rounded-lg"
+                className="rounded-lg"
               />
+            </div>
+            <div className="flex justify-center pt-0 pb-8">
+              <a
+                href="/Daily Commute Dashboard.pbix"
+                download
+                className="rounded-lg bg-slate-700 px-4 py-2 text-white hover:bg-emerald-700"
+              >
+                Download Power BI Report
+              </a>
             </div>
             Created a dashboard in Power BI to analyze employee commuting
             patterns across key neighborhoods in Chennai. The dataset covers 100
@@ -67,26 +76,26 @@ export default function featureUsageAnalysis() {
   );
 }
 
-function FeatureNavBar() {
-  return (
-    <div className="flex justify-end bg-slate-900 p-8">
-      <Navbar fluid rounded className="bg-slate-900 text-4xl text-white">
-        <NavbarToggle />
-        <NavbarCollapse>
-          <NavbarLink className="text-lg text-white" href="#home" active>
-            Home
-          </NavbarLink>
-          <NavbarLink as={Link} className="text-lg text-white" href="#about">
-            About
-          </NavbarLink>
-          <NavbarLink className="text-lg text-white" href="#projects">
-            Projects
-          </NavbarLink>
-          <NavbarLink className="text-lg text-white" href="#contact">
-            Contact
-          </NavbarLink>
-        </NavbarCollapse>
-      </Navbar>
-    </div>
-  );
-}
+// function FeatureNavBar() {
+//   return (
+//     <div className="flex justify-end bg-slate-900 p-8">
+//       <Navbar fluid rounded className="bg-slate-900 text-4xl text-white">
+//         <NavbarToggle />
+//         <NavbarCollapse>
+//           <NavbarLink className="text-lg text-white" href="#home" active>
+//             Home
+//           </NavbarLink>
+//           <NavbarLink as={Link} className="text-lg text-white" href="#about">
+//             About
+//           </NavbarLink>
+//           <NavbarLink className="text-lg text-white" href="#projects">
+//             Projects
+//           </NavbarLink>
+//           <NavbarLink className="text-lg text-white" href="#contact">
+//             Contact
+//           </NavbarLink>
+//         </NavbarCollapse>
+//       </Navbar>
+//     </div>
+//   );
+// }

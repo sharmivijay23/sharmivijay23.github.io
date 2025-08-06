@@ -23,7 +23,7 @@ const skills = [
         icon: <SiNextdotjs size={28} className="text-black" />,
       },
       { name: "SAP", icon: <SiSap size={28} className="text-black" /> },
-      { name: "Power BI", logo: "/logos/power-bi.svg" },
+      { name: "Power BI", logo: "/logos/powerbi.png" },
       { name: "SQL", icon: <BsFiletypeSql size={28} className="text-black" /> },
     ],
   },

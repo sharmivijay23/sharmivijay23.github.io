@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const projects = [
   {
-    imgSrc: "/Sales_comparison.png",
+    imgSrc: "/Feature Usage Trends.jpg",
     imgAlt: "Feature Usage and Growth Trends",
     desc: "Analyzed year-over-year feature usage trends with interactive comparisons across months and metrics. Visualized user behavior shifts and growth insights using dynamic slicers and KPI indicators.",
     skillSet: "Power BI",
@@ -12,7 +12,7 @@ const projects = [
     title: "Feature Usage and Growth Trends",
   },
   {
-    imgSrc: "/Sales_comparison.png",
+    imgSrc: "/Daily Commute Dashboard.jpg",
     imgAlt: "Daily Commute Dashboard",
     desc: "Analyzed employee commute patterns using transport mode, distance, and time metrics. Visualized trends and delays with interactive maps, scatter plots, and KPI summaries to uncover actionable insights.",
     skillSet: "Power BI",
@@ -21,13 +21,13 @@ const projects = [
     title: "Daily Commute Dashboard - 2024",
   },
   {
-    imgSrc: "/Tic_Tac_Toe.png",
-    imgAlt: "Tic-Tac-Toe",
-    desc: "Play the classic Tic-Tac-Toe game with a clean and interactive design. Simple, fun, and perfect for quick matches between two players.",
-    skillSet: "React JS, Flowbite, Tailwind CSS",
+    imgSrc: "/FocusNest.png",
+    imgAlt: "Focus Nest",
+    desc: "A collaborative side project that turns your screen into a mindful productivity zone. FocusNest offers ambient visuals, focus music, and Pomodoro tools to support deep work.",
+    skillSet: "React JS, Tailwind CSS",
     category: "React",
-    href: "https://github.com/sharmivijay23/tic-tac-toe",
-    title: "Tic Tac Toe",
+    href: "https://github.com/sharmivijay23/budget-planner",
+    title: "Focus Nest",
   },
   {
     imgSrc: "/budget_planner.png",
@@ -37,6 +37,15 @@ const projects = [
     category: "React",
     href: "https://github.com/sharmivijay23/budget-planner",
     title: "Budget Planner",
+  },
+  {
+    imgSrc: "/Tic_Tac_Toe.png",
+    imgAlt: "Tic-Tac-Toe",
+    desc: "Play the classic Tic-Tac-Toe game with a clean and interactive design. Simple, fun, and perfect for quick matches between two players.",
+    skillSet: "React JS, Flowbite, Tailwind CSS",
+    category: "React",
+    href: "https://github.com/sharmivijay23/tic-tac-toe",
+    title: "Tic Tac Toe",
   },
 ];
 
@@ -54,8 +63,25 @@ export default function Projects() {
               ))}
             </div>
           </TabItem>
-          <TabItem title="React JS"> React JS </TabItem>
-          <TabItem title="Power BI"> Power BI </TabItem>
+          <TabItem title="React JS">
+            <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3">
+              {projects
+                .filter((project) => project.category === "React")
+                .map((project) => (
+                  <MyCard key={project.imgSrc} {...project} />
+                ))}
+            </div>
+          </TabItem>
+
+          <TabItem title="Power BI">
+            <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3">
+              {projects
+                .filter((project) => project.category === "Power BI")
+                .map((project) => (
+                  <MyCard key={project.imgSrc} {...project} />
+                ))}
+            </div>
+          </TabItem>
         </Tabs>
       </div>
     </div>

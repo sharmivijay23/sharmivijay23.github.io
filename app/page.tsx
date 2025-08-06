@@ -8,22 +8,22 @@ import ContactSection from "../components/contacts";
 
 export default function Home() {
   return (
-    <div>
+    <div className="relative">
       <MyNavBar />
       <main className="flex flex-col items-center justify-center bg-gray-950 lg:p-16">
-        <section className="flex w-full justify-center" id="home">
+        <section className="flex w-full justify-center pt-16" id="home">
           <ProfileCard />
         </section>
-        <section className="flex w-full justify-center" id="about">
+        <section className="flex w-full justify-center pt-16" id="about">
           <About />
         </section>
-        <section className="flex w-full justify-center" id="projects">
+        <section className="flex w-full justify-center pt-16" id="projects">
           <Projects />
         </section>
-        <section className="flex w-full justify-center" id="skills">
+        <section className="flex w-full justify-center pt-16" id="skills">
           <SkillSection />
         </section>
-        <section className="flex w-full justify-center" id="contact">
+        <section className="flex w-full justify-center pt-16" id="contact">
           <ContactSection />
         </section>
       </main>

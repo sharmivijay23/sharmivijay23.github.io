@@ -1,8 +1,8 @@
 export default function About() {
   return (
-    <div className="mx-auto my-12 w-full px-8 text-white sm:w-5/6 lg:w-2/3 lg:px-2">
+    <div className="ls:py-16 mx-auto w-full px-8 text-white sm:w-5/6 lg:w-2/3 lg:px-2">
       {/* Section Heading */}
-      <div className="mb-8 text-center text-4xl font-bold lg:p-12">About</div>
+      <div className="my-8 text-center text-4xl font-bold lg:p-12">About</div>
 
       {/* Paragraphs */}
       <div className="text-base leading-relaxed">

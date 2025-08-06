@@ -39,17 +39,16 @@ export default function ProfileCard() {
           {/* Text Content */}
           <div className="col-span-3">
             <div className="flex flex-col items-center justify-between gap-6">
-              <div className="text-4xl font-bold">Sharmila Vijayakumar</div>
+              <div className="text-5xl font-bold">Sharmila Vijayakumar</div>
 
-              <div className="text-md px-4 text-center text-gray-700 italic">
-                "From business insights to frontend code — constantly learning,
-                building, and improving every day."
-                <br />
-                "Bridging business needs and modern tech with curiosity,
-                clarity, and continuous growth."
+              <div className="px-4 text-center text-lg text-gray-700 italic">
+                Passionate about turning strategy into impact - driving outcomes
+                through OKRs, guiding projects to delivery, and practicing
+                frontend development to bring ideas to life - constantly
+                learning, building, and improving every day.
               </div>
 
-              <Button className="px-6 py-2 text-sm">About Me</Button>
+              <Button className="mt-8 px-6 py-2 text-sm">About Me</Button>
             </div>
           </div>
 
