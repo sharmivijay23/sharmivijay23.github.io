@@ -5,6 +5,7 @@ import About from "../components/about";
 import Projects from "../components/projects";
 import SkillSection from "../components/skills";
 import ContactSection from "../components/contacts";
+import Head from "next/head";
 
 export default function Home() {
   return (
