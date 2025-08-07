@@ -22,15 +22,16 @@ export default function ProfileCard() {
           </div>
 
           <div className="sm:text-md px-2 text-center text-sm text-gray-700 italic">
-            "From business insights to frontend code — constantly learning,
-            building, and improving every day."
-            <br />
-            "Bridging business needs and modern tech with curiosity, clarity,
-            and continuous growth."
+            Passionate about turning strategy into impact - driving outcomes
+            through OKRs, guiding projects to delivery, and practicing frontend
+            development to bring ideas to life - constantly learning, building,
+            and improving every day.
           </div>
 
           <div className="flex justify-center">
-            <Button className="px-6 py-2 text-sm">About Me</Button>
+            <a href="#about">
+              <Button className="px-6 py-2 text-sm">About Me</Button>
+            </a>
           </div>
         </div>
 
@@ -47,8 +48,11 @@ export default function ProfileCard() {
                 frontend development to bring ideas to life - constantly
                 learning, building, and improving every day.
               </div>
-
-              <Button className="mt-8 px-6 py-2 text-sm">About Me</Button>
+              <a href="#about">
+                <Button className="mt-8 cursor-pointer px-6 py-2 text-sm">
+                  About Me
+                </Button>
+              </a>
             </div>
           </div>
 
