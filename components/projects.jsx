@@ -26,7 +26,7 @@ const projects = [
     desc: "A collaborative side project that turns your screen into a mindful productivity zone. FocusNest offers ambient visuals, focus music, and Pomodoro tools to support deep work.",
     skillSet: "React JS, Tailwind CSS",
     category: "React",
-    href: "https://github.com/sharmivijay23/budget-planner",
+    href: "https://github.com/sharmivijay23/focus",
     title: "Focus Nest",
   },
   {
